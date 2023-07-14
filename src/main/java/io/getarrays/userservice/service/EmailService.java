@@ -1,5 +1,7 @@
 package io.getarrays.userservice.service;
 
+import io.getarrays.userservice.controller.dto.SendMailResponseBody;
+
 /**
  * @author Junior RT
  * @version 1.0
@@ -8,5 +10,5 @@ package io.getarrays.userservice.service;
  */
 
 public interface EmailService {
-    void sendSimpleMailMessage(String name, String to);
+    SendMailResponseBody sendSimpleMailMessage(String name, String to);
 }
